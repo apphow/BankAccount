@@ -24,9 +24,6 @@ public class BankAccount {
 
         // add default accountNUmber and balance
         this(333, 100.00, customerName, email, phoneNumber);
-        this.customerName = customerName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
     }
 
     public void deposit (double depositAmount){
