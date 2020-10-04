@@ -8,10 +8,11 @@ public class Main {
 
         BankAccount defaultAccount = new BankAccount();
         BankAccount anjiesBankAccount = new BankAccount(12345, 0.00, "Anjie", "Anjie@gmail.com", "555-555-5555");
-
+        BankAccount partialDefault = new BankAccount("Anjie", "gmail.com", "555-555-5555");
         System.out.println("Default account");
         System.out.println(defaultAccount);
         System.out.println(anjiesBankAccount);
+        System.out.println(partialDefault);
         System.out.println(anjiesBankAccount.getBalance());
         Scanner scanner = new Scanner(System.in);
 

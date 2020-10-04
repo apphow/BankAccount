@@ -20,7 +20,16 @@ public class BankAccount {
             this.phoneNumber = phoneNumber;
         }
 
-        public void deposit ( double depositAmount){
+    public BankAccount(String customerName, String email, String phoneNumber) {
+
+        // add default accountNUmber and balance
+        this(333, 100.00, customerName, email, phoneNumber);
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void deposit (double depositAmount){
             this.balance += depositAmount;
             System.out.println("You deposited " + depositAmount + " and your balance is " + balance);
         }
